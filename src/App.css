@@ -1,38 +1,224 @@
-.App {
-  text-align: center;
+.app{
+    height: 100vh;
+    display: flex;
+    background-color: #020230;
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main{
+    width: 75%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #020230),
+    url("./assets/bg.jpg") center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pyramid{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.moneyList{
+    list-style: none;
+    width: 100%;
+    padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.moneyListItem{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.moneyListItem.active{
+    background-color: teal;
+}
+
+.moneyListItemNumber{
+    font-size: 18px;
+    font-weight: 100;
+    width: 30%;
+}
+
+.moneyListItemPrice{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.top{
+    height: 50%;
+    position: relative;
+}
+
+.timer{
+    width: 60px;
+    height: 60px;
+    border: 5px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 0;
+    left:80px;
+}
+
+.trivia{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.question{
+    background:linear-gradient(#100241,black);
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    border-radius:10px;
+    font-size: 20px;
+    border:2px solid white;
+    margin: 15px;
+}
+
+.answers{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.answer{
+    background:linear-gradient(#0e0124,#22074d);
+    width: 40%;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 0 10px 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.answer:hover, .answer.active{
+    background: mediumblue;
+}
+
+.answer.correct{
+    animation: correct 3s ease forwards;
+}
+
+.answer.incorrect{
+    animation: incorrect 3s ease forwards;
+}
+
+.answer.disable{
+    cursor:not-allowed;
+    pointer-events: none;
+}
+
+@keyframes correct {
+    0%,22%,42%,62%{
+        background: blue;
+    }
+    20%,40%,60%{
+        background: #100241;
+    }
+    62%,100%{
+        background: rgb(80, 173, 80);
+    }
+}
+
+@keyframes incorrect {
+    0%,22%,42%,62%{
+        background: blue;
+    }
+    20%,40%,60%{
+        background: #100241;
+    }
+    62%,100%{
+        background: red;
+    }
+}
+
+
+.introduction{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./assets/bg.jpg");
+    background-color: beige;
+    align-items: center;
+    position: relative;
+}
+
+.wrapper{
+    position: absolute;
+    top:0;
+    right:0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgb(222, 218, 218);
+    width: 25%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.userInput{
+    border: none;
+    outline:none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.startButton{
+    padding: 7px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(4, 46, 170);
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+}
+
+.congratsMsg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.playAgain{
+    padding: 7px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(4, 46, 170);
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+}
+
+.earning{
+    display: flex;
+    position:absolute;
+    flex-direction: column;
+    gap: 15px;
+    top:38%;
+    left:27%;
+    padding: 24px;
 }
