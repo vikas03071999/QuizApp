@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/vikas03071999.github.io/QuizApp/static/css/main.dd4556d5.css",
-    "main.js": "/vikas03071999.github.io/QuizApp/static/js/main.25fd155f.js",
-    "static/js/845.d9dc3b77.chunk.js": "/vikas03071999.github.io/QuizApp/static/js/845.d9dc3b77.chunk.js",
-    "static/media/bg.jpg": "/vikas03071999.github.io/QuizApp/static/media/bg.c137ccd722d64133b4df.jpg",
-    "static/media/play.wav": "/vikas03071999.github.io/QuizApp/static/media/play.8e5f6d1d81d4e1414b95.wav",
-    "static/media/correct.wav": "/vikas03071999.github.io/QuizApp/static/media/correct.160572d72c858155072e.wav",
-    "static/media/wrong.wav": "/vikas03071999.github.io/QuizApp/static/media/wrong.e946821894ae9b0a0d6f.wav",
-    "index.html": "/vikas03071999.github.io/QuizApp/index.html",
-    "main.dd4556d5.css.map": "/vikas03071999.github.io/QuizApp/static/css/main.dd4556d5.css.map",
-    "main.25fd155f.js.map": "/vikas03071999.github.io/QuizApp/static/js/main.25fd155f.js.map",
-    "845.d9dc3b77.chunk.js.map": "/vikas03071999.github.io/QuizApp/static/js/845.d9dc3b77.chunk.js.map"
+    "main.css": "/QuizApp/static/css/main.8cb61d1f.css",
+    "main.js": "/QuizApp/static/js/main.9d78641a.js",
+    "static/js/845.d9dc3b77.chunk.js": "/QuizApp/static/js/845.d9dc3b77.chunk.js",
+    "static/media/bg.jpg": "/QuizApp/static/media/bg.c137ccd722d64133b4df.jpg",
+    "static/media/play.wav": "/QuizApp/static/media/play.8e5f6d1d81d4e1414b95.wav",
+    "static/media/correct.wav": "/QuizApp/static/media/correct.160572d72c858155072e.wav",
+    "static/media/wrong.wav": "/QuizApp/static/media/wrong.e946821894ae9b0a0d6f.wav",
+    "index.html": "/QuizApp/index.html",
+    "main.8cb61d1f.css.map": "/QuizApp/static/css/main.8cb61d1f.css.map",
+    "main.9d78641a.js.map": "/QuizApp/static/js/main.9d78641a.js.map",
+    "845.d9dc3b77.chunk.js.map": "/QuizApp/static/js/845.d9dc3b77.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd4556d5.css",
-    "static/js/main.25fd155f.js"
+    "static/css/main.8cb61d1f.css",
+    "static/js/main.9d78641a.js"
   ]
 }
