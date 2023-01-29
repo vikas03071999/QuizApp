@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <BrowserRouter>
+    <BrowserRouter basename="/QuizApp">
       <Routes>
         <Route exact path="/" element={<Intro />} />
         <Route path="/playGame" element={<App />} />
