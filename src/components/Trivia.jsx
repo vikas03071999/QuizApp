@@ -55,8 +55,8 @@ export default function Trivia({ data, quesNumber, setQuesNumber, timer, setTime
   }
 
   return (
-    loading == true ? 
-    (<div className='congratsMsg'>Correct answer, loading next question ...</div> ):
+    // loading == true ? 
+    // (<div className='congratsMsg'>Correct answer, loading next question</div> ):
     <div className='trivia'>
       <div className="question">{question?.question}</div>
       <div className="answers">

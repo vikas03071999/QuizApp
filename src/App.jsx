@@ -238,15 +238,11 @@ function App() {
 
 
   return (
-    <div className="app">
+    <>{!timer && <div className="timer"><Timer setTimer={setTimer} quesNumber={quesNumber} /></div>}
+    <div className="app">        
       <div className="main">
         {
           timer ? <div className="earning"><h1 className="endQuizText">You earned : ${earned}</h1><button type="button" className="startButton" onClick={() => navigate("/")}>Play again</button></div> : (
-            <>
-              <div className="top">
-                <div className="timer"><Timer setTimer={setTimer} quesNumber={quesNumber} /></div>
-              </div>
-              <div className="bottom">
                 <Trivia
                   data={questionData}
                   quesNumber={quesNumber}
@@ -256,13 +252,11 @@ function App() {
                   moneyPyramid={moneyPyramid}
                   setEarned={setEarned}
                 />
-              </div>
-            </>
           )
         }
         </div>
 
-        <div className="pyramid">
+        {!timer && <div className="pyramid">
           <ul className="moneyList">
             {
               moneyPyramid.map((item) => (
@@ -273,8 +267,8 @@ function App() {
               ))
             }
           </ul>
-      </div>
-    </div >
+      </div>}
+    </div ></>
   );
 }
 
